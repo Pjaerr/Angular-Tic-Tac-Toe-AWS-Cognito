@@ -1,0 +1,19 @@
+<h2>Login</h2>
+
+<form (ngSubmit)="onSubmit()">
+    <label>
+        Email:
+    </label>
+    <input type="text" name="email" [(ngModel)]="email">
+
+    <label>
+        Password:
+    </label>
+    <input type="password" name="password" [(ngModel)]="password">
+
+    <input type="submit" value="Login" />
+
+    <p class="login-error-message">{{errorMessage}}</p>
+</form>
+
+Don't have an account? <button (click)="onSignUpClick()">Sign Up</button>
